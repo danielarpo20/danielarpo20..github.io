@@ -1,0 +1,103 @@
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3em 0 2em;
+
+  &-container {
+    width: $maxWidthMobile;
+  }
+
+  &-title {
+    font-family: $IBMPlexSans;
+    color: $textColor;
+    font-size: $TitleMobile;
+    letter-spacing: 0;
+    line-height: em(21);
+    margin: 0;
+    padding-top: .8em;
+    width: 70%;
+  }
+  
+  &-line {
+    text-decoration-line: line-through;
+  }
+
+  &-paragraphMobile {
+    font-family: $IBMPlexMono;
+    font-size: $paragrapMobile;
+    color: $textColor;
+    letter-spacing: 0;
+    line-height: em(22);
+    margin: 0;
+    padding-top: 1em;
+  }
+
+  &-paragraphDesktop {
+    display: none;
+  }
+
+  &-buttom {
+    justify-content: center;
+  }
+
+  &-link {
+    text-decoration: none;
+    color: $textColor;
+
+    &:hover {
+      color: $textColorWhite;
+    }
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+  .intro {
+    max-width: $maxWidthIpad;
+    margin: auto;
+    align-items: flex-start;
+    padding: 4em 0 1em;
+
+    &-title {  
+      width: 100%;
+    }
+
+    &-paragraphMobile {
+      width: 70%;
+    }
+  }
+}
+
+@media screen and (min-width: 1350px) {
+  .intro {
+    max-width: $maxWidthDesktop;
+    padding: 12em 0 2em;
+
+    &-dot {
+      color: $itemsBackground;
+    }
+
+    &-title {
+      font-size: $TitleDesktop;
+      margin: 0;
+      padding: 0;
+    }
+
+    &-paragraphMobile {
+      display: none;
+      padding-top: 0;
+    }
+  
+    &-paragraphDesktop {
+      display: block;
+      font-family: $IBMPlexMono;
+      font-size: $paragrapMobile;
+      color: $textColor;
+      letter-spacing: 0;
+      line-height: em(22);
+      margin: 0;
+      width: 68%;
+    }
+  }
+}

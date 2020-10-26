@@ -1,0 +1,163 @@
+.navigation {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  z-index: 2;
+  background-color: white;
+  height: em(44);
+
+  &-image {
+    height: em(24);
+    padding: .6em 5%;
+  }
+  
+  &-checkHidden {
+    display: none;
+  }
+  
+  &-action {
+    display: block;
+    font-size: $textThemes;
+    position: absolute;
+    right: 0;
+    padding: .4em 5%;
+    cursor: pointer;
+  }
+  
+  &-actionX {
+    display: none;
+    font-size: $textThemes;
+    position: absolute;
+    right: 0;
+    padding: .4em 5%;
+    cursor: pointer;
+  }
+
+  &-nav {
+    width: 100%;
+    display: none;
+    padding: .5em 0;
+    background-color: $itemsBackground;
+  }
+
+  &-items {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  
+  &-item {
+    list-style: none;
+    padding: 1em;
+    &:hover {
+      background: $blueLight;
+    }
+  }
+
+  &-link {
+    text-transform: uppercase;
+    text-decoration: none;
+    display: block;
+    font-family: $IBMPlexMono;
+    font-size: $paragrapMobile;
+    color: $textColorWhite;
+    position: relative;
+  }
+
+  &-checkHidden:checked ~ &-nav {
+    display: flex;
+  }
+  &-checkHidden:checked ~ &-actionX {
+    display: flex;
+  }
+  &-checkHidden:checked ~ &-action {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .navigation {
+    position: fixed;
+    margin: auto;
+    display: flex;
+    flex-direction: initial;
+    justify-content: space-between;
+    align-items: center;
+
+    &-image {
+      padding-left: 10%;
+    }
+
+    &-action {
+      display: none;
+    }
+
+    &-nav {
+      display: flex;
+      width: auto;
+      padding: 0 5%;
+      background-color: white;
+    }
+
+    &-items {
+      display: flex;
+      width: auto;
+    }
+
+    &-item {
+      padding: 0;
+      &:hover {
+        background: white;
+      }
+    }
+
+    &-link {
+      color: $textColor;
+      display: initial  ;
+    }
+
+    &-link:before {
+      position: absolute;
+      content: '';
+      left: 0;
+      bottom: 50%;
+      height: em(1);
+      width: 100%;
+      background: $buttonGreen;
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform .4s linear;
+    }
+  
+    &-link:hover:before {
+      transform: scaleX(1);
+      transform-origin: left;
+    }
+
+    &-link:hover {
+      color: $buttonGreen;
+    }
+
+    &-link:active {
+      text-decoration-line: line-through;
+      color: rgba(6,10,36,0.56);
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .navigation {
+    height: 80px;
+
+    &-image {
+      height: em(36);
+      padding: 1.5em 5%;
+    }
+
+    &-link {
+      margin-left: 2em;
+    }
+  }
+}

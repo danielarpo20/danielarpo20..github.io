@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Podcast Project</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="navigation">
+      <img src="./imgs/logo.svg" alt="logo" class="navigation-image" />
+      <input id="header-check" type="checkbox" class="navigation-checkHidden" />
+      <label for="header-check" class="navigation-action">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label for="header-check" class="navigation-actionX">
+        <i class="fas fa-times"></i>
+      </label>
+      <nav class="navigation-nav">
+        <ul class="navigation-items">
+          <li class="navigation-item">
+            <a href="#episodes" class="navigation-link">EPISODIOS</a>
+          </li>
+          <li class="navigation-item">
+            <a href="#nosotros" class="navigation-link">NOSOTROS</a>
+          </li>
+          <li class="navigation-item">
+            <a href="#invitadas" class="navigation-link">ENTREVISTAS</a>
+          </li>
+          <li class="navigation-item">
+            <a href="#topicos" class="navigation-link">TÓPICOS</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="intro">
+        <div class="intro-container">
+          <h1 class="intro-title">
+            Hello <span class="intro-line">world</span> pale blue dot<span
+              class="intro-dot"
+              >.</span
+            >
+          </h1>
+          <p class="intro-paragraphMobile">
+            Un podcast que explora el mundo de la programación. Nuevos
+            episodios, todos los jueves cada 15 días.
+          </p>
+          <p class="intro-paragraphDesktop">
+            El portal de podcasts que explora el mundo de la programación y la
+            tecnología. Nuevos episodios, todos los jueves cada 15 días.
+          </p>
+        </div>
+        <button class="button intro-buttom">
+          <a
+            href="https://podcasters.spotify.com/"
+            class="intro-link"
+            rel="noreferrer noopener"
+            target="_blank"
+          >
+            Conoce más
+          </a>
+        </button>
+      </section>
+
+      <section class="episodes" id="episodes">
+        <svg
+          class="episodes-mySVGUp"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 100 100"
+          preserveAspectRatio="none"
+        >
+          <polygon fill="white" points="0,0 100,0 0,8" />
+        </svg>
+        <div class="episodes-wraper">
+          <h1 class="episodes-title">Episodios</h1>
+          <div class="episodes-container">
+            <div class="episodes-frameContainer">
+              <iframe
+                src="https://open.spotify.com/embed-podcast/episode/6eCHJ8yOYtksW8OT93Dbdu"
+                width="100%"
+                height="100%"
+                frameborder="0"
+                allowtransparency="true"
+                allow="encrypted-media"
+              ></iframe>
+            </div>
+            <div class="episodes-frameContainer">
+              <iframe
+                src="https://open.spotify.com/embed-podcast/episode/1ezdL2ivAGLwSE6Xbssxqt"
+                width="100%"
+                height="100%"
+                frameborder="0"
+                allowtransparency="true"
+                allow="encrypted-media"
+              ></iframe>
+            </div>
+            <div class="episodes-frameContainer">
+              <iframe
+                src="https://open.spotify.com/embed-podcast/episode/3cWta1iiQSfvrdHaCbLkSD"
+                width="100%"
+                height="100%"
+                frameborder="0"
+                allowtransparency="true"
+                allow="encrypted-media"
+              ></iframe>
+            </div>
+            <div class="episodes-frameContainer">
+              <iframe
+                src="https://open.spotify.com/embed-podcast/episode/31VyAQAwBiKoHVoYUCEzjQ"
+                width="100%"
+                height="100%"
+                frameborder="0"
+                allowtransparency="true"
+                allow="encrypted-media"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+        <svg
+          class="episodes-mySVGDown"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 100 100"
+          preserveAspectRatio="none"
+        >
+          <polygon fill="white" points="0,100 100,100 1000,0" />
+        </svg>
+      </section>
+
+      <section class="whereWeCome" id="nosotros">
+        <img class="whereWeCome-img" src="./imgs/phone.png" alt="phone image" />
+        <div class="whereWeCome-container">
+          <h1 class="whereWeCome-title">De dónde venimos</h1>
+          <p class="whereWeCome-paragraph">
+            Our posturings, our imagined self-importance, the delusion that we
+            have some privileged position in the Universe, are challenged by
+            this point of pale light.
+          </p>
+          <p class="whereWeCome-paragraph">
+            Our planet is a lonely speck in the great enveloping cosmic dark. In
+            our obscurity, in all this vastness, there is no hint that help will
+            come from elsewhere to save us from ourselves.
+          </p>
+        </div>
+      </section>
+
+      <section class="invited" id="invitadas">
+        <h1 class="invited-title">Invitadas/os estelares</h1>
+        <div class="invited-imgContainer">
+          <img class="invited-img" src="./imgs/grace-hopper.png" alt="Grace" />
+          <img class="invited-img" src="./imgs/Katie-Bouman.png" alt="Katie" />
+          <img
+            class="invited-img"
+            src="./imgs/Margaret_Hamilton.png"
+            alt="Margaret"
+          />
+          <img
+            class="invited-img"
+            src="./imgs/An E.R.A.Univac 1103 computer in the 1950s.png"
+            alt="computers"
+          />
+          <img
+            class="invited-img"
+            src="./imgs/Computer operators with an Eniac — the world’s first programmable general-purpose computer.png"
+            alt="servers"
+          />
+          <img class="invited-img" src="./imgs/susan-kare.png" alt="Susan" />
+        </div>
+      </section>
+
+      <section class="themes" id="topicos">
+        <h1 class="themes-title">Algunos de nuestros temas</h1>
+        <div class="themes-container">
+          <div class="themes-imgContainer">
+            <img
+              class="themes-img"
+              src="./imgs/icon1.svg"
+              alt="trabajo remoto img"
+            />
+            <p class="themes-paragraph">Trabajo remoto</p>
+          </div>
+          <div class="themes-imgContainer">
+            <img
+              class="themes-img themes-sizeHead"
+              src="./imgs/icon2.svg"
+              alt="Repensando la programación img"
+            />
+            <p class="themes-paragraph themes-pTwoLines">
+              Repensando la programación
+            </p>
+          </div>
+          <div class="themes-imgContainer">
+            <img
+              class="themes-img"
+              src="./imgs/icon3.svg"
+              alt="Bases del código
+          img"
+            />
+            <p class="themes-paragraph">Bases del código</p>
+          </div>
+          <div class="themes-imgContainer">
+            <img
+              class="themes-img themes-sizePoints"
+              src="./imgs/icon4.svg"
+              alt="Seguridad
+          informática img"
+            />
+            <p class="themes-paragraph themes-pTwoLines">
+              Seguridad informática
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="news">
+        <svg
+          class="news-mySVG"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 100 100"
+          preserveAspectRatio="none"
+        >
+          <polygon fill="white" points="0,0 100,0 0,50" />
+        </svg>
+        <div class="news-container">
+          <h1 class="news-title">¿Quieres las últimas novedades?</h1>
+          <button class="button">
+            <a
+              href="https://newsroom.spotify.com/2020-07-21/spotify-fans-can-better-connect-to-creators-with-new-video-podcasts/"
+              class="news-link"
+              rel="noreferrer noopener"
+              target="_blank"
+            >
+              Escucha los episodios
+            </a>
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p class="footer-text">© 2019— Hello blue pale dot</p>
+      <div class="footer-container">
+        <a
+          href="https://www.spotify.com/us/"
+          rel="noreferrer noopener"
+          target="_blank"
+        >
+          <i class="fab fa-spotify footer-icon"> </i>
+        </a>
+        <a
+          href="https://www.instagram.com/spotify/?hl=en"
+          rel="noreferrer noopener"
+          target="_blank"
+        >
+          <i class="fab fa-instagram footer-icon"></i>
+        </a>
+        <a
+          href="https://twitter.com/spotifycares?lang=en"
+          rel="noreferrer noopener"
+          target="_blank"
+        >
+          <i class="fab fa-twitter footer-icon"></i>
+        </a>
+        <a
+          href="https://www.facebook.com/Spotify/"
+          rel="noreferrer noopener"
+          target="_blank"
+        >
+          <i class="fab fa-facebook footer-icon"></i>
+        </a>
+        <a
+          href="https://t.me/SpotifyMusicDownloaderBot"
+          rel="noreferrer noopener"
+          target="_blank"
+        >
+          <i class="fab fa-telegram footer-icon"></i>
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>

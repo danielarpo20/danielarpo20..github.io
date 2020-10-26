@@ -1,0 +1,39 @@
+// Colors
+$buttonGreen: #00f3bb;
+$buttonBlue: #0000FE;
+$blueLight: #0000ff;
+$blueDrak: #0000a3;
+$itemsBackground: #0000EC;
+
+// TextColors
+$textColorWhite: #ffffff;
+$textColor: #060a24;
+
+// Fonts
+$IBMPlexSans: 'IBM Plex Sans', sans-serif;
+$IBMPlexMono: 'IBM Plex Mono', monospace;
+
+// Fonts Size
+$TitleMobile: 36px;
+$paragrapMobile: 16px;
+$TitleDesktop: 64px;
+$subTitleDesktop: 48px;
+$textThemes: 24px;
+$textFooter: 14px;
+$textButton: 18px;
+
+// Max width
+$maxWidthMobile: 90%;
+$maxWidthIpad: 80%;
+$maxWidthDesktop: 70%;
+
+body {
+  margin: 0;
+}
+
+@media screen and (min-width: 2000px) {
+  body, header {
+    max-width: 80%;
+    margin: auto;
+  }
+}
