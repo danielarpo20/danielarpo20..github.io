@@ -36,19 +36,6 @@
   &-paragraphDesktop {
     display: none;
   }
-
-  &-buttom {
-    justify-content: center;
-  }
-
-  &-link {
-    text-decoration: none;
-    color: $textColor;
-
-    &:hover {
-      color: $textColorWhite;
-    }
-  }
 }
 
 

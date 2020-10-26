@@ -17,6 +17,7 @@
   }
 
   &-container {
+    width: $maxWidthMobile;
     margin: auto;
   }
 
@@ -29,15 +30,6 @@
     line-height: em(21);
     margin: auto;
     width: 80%;
-  }
-
-  &-link {
-    text-decoration: none;
-    color: $textColor;
-
-    &:hover {
-      color: $textColorWhite;
-    }
   }
 }
 
