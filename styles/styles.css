@@ -354,6 +354,10 @@ body {
   padding: 0.5em 0;
 }
 
+.episodes-frame {
+  border: 0px;
+}
+
 @media screen and (min-width: 768px) {
   .episodes {
     padding: 5em 0 8em 0;
